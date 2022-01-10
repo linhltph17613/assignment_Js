@@ -5,7 +5,7 @@ const Header = {
         return /*html*/`
         <div class="bg-[#272f54]  py-4">
         <a href="#">
-          <img class="m-auto" src="./../../img/logo.jpg" alt="">
+          <img class="m-auto" src="https://picsum.photos/150/50" alt="">
         </a>
       </div>
       <div class="flex bg-[#c97900]">
