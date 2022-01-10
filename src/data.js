@@ -1,12 +1,12 @@
 export const menuList = [
   {name: "Home Page", 
-    link: ""
+    link: "/"
   },
   {name: "About Page", 
-    link: "about"
+    link: "/about"
   },
   {name: "Chương trình đào tạo", 
-    link: "about"
+    link: "/about"
   },
   {name: "Góc sinh viên", 
     link: "about"
