@@ -1,23 +1,21 @@
-import Navigo from 'navigo';
+import Navigo from "navigo";
+import AboutPage from "./pages/about";
+import HomePage from "./pages/home";
 
-import AboutPage from './pages/about.js';
-import HomePage from './pages/home.js';
+const router = new Navigo("/", {linksSelector:"a"});
+const render = (content) => {
+    document.getElementById ("#app").innerHTML = content.print();
 
-const router = new Navigo("/");
-const render =  (content) => {
-   // console.log(content); //{print()}
-    document.getElementById("app").innerHTML = content.print();
-};
+    
+}
 
-router.on({
-    "/": () => {
-        render(HomePage);
-    },
-    "/about": () => {
-        render(AboutPage);
+router.on(
+    {
+        "/": () => {render(HomePage)},
+        "/about": () => {render(AboutPage)}
+    } 
 
-    },
-});
+)
 router.resolve();
 
 
