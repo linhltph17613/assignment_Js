@@ -1,3 +1,23 @@
-// import Navigo from 'navigo'; 12.3K (gzipped: 4.2K)
+import Navigo from 'navigo';
 
-// const router = new Navigo();
+import AboutPage from './pages/about.js';
+import HomePage from './pages/home.js';
+
+const router = new Navigo("/");
+const render =  (content) => {
+   // console.log(content); //{print()}
+    document.getElementById("app").innerHTML = content.print();
+};
+
+router.on({
+    "/": () => {
+        render(HomePage);
+    },
+    "/about": () => {
+        render(AboutPage);
+
+    },
+});
+router.resolve();
+
+
