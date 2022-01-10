@@ -13,7 +13,7 @@ const Header = {
           <ul class="menu flex">
           ${menuList.map((post) => `
          
-          <li class="menu_item"><a class="menu_item_link block py-3 px-6 hover:bg-indigo-600 hover:text-white hover:decoration-1" href="${post.link}">${post.name}</a></li>
+          <li class="menu_item"><a class="menu_item_link block py-3 px-6 hover:bg-indigo-600 hover:text-white hover:decoration-1" href="/${post.link}">${post.name}</a></li>
 
            ` ).join("")}
             
