@@ -7,16 +7,16 @@ import HomePage from './pages/home.js';
 const router = new Navigo("/", {linksSelector: "a"});
 const render =  (content) => {
    // console.log(content); //{print()}
-   document.getElementById("header").innerHTML = Header.render();
+   document.getElementById("header").innerHTML = Header.print();
     document.getElementById("app").innerHTML = content;
 };
 
 router.on({
     "/": () => {
-        print(HomePage.render());
+        render(HomePage.print());
     },
     "/about": () => {
-        print( AboutPage.render());
+        render( AboutPage.print());
 
     },
     

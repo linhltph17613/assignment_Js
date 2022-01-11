@@ -4,24 +4,22 @@ import Header from "../components/header";
 import NewsList from "../components/newList";
 
 const HomePage = {
-    render() {
+    print() {
         return /* html */`
-            <header>
-            ${Header.render()}
-            </header>
+            
             <div class="banner">
-            ${Banner.render()}
+            ${Banner.print()}
             </div>
            <h2 class="text-2xl font-semibold uppercase my-4">Tin tức học tập</h2>
             <div class="grid grid-cols-3 gap-8">
-            ${NewsList.render()}
+            ${NewsList.print()}
             </div>
             <h2 class="text-2xl font-semibold uppercase my-4">Hoạt động sinh viên</h2>
             <div class="grid grid-cols-3 gap-8">
-            ${NewsList.render()}
+            ${NewsList.print()}
             </div>
             <footer class="bg-[#272f54] mt-4">
-            ${footer.render()}
+            ${footer.print()}
             </footer>
         `;
     },

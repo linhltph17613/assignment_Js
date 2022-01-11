@@ -1,7 +1,7 @@
-import { menuList } from "../data";
+
 
 const Header = {
-    render () {
+    print () {
         return /*html*/`
         <div class="bg-[#272f54]  py-4">
         <a href="#">

@@ -1,4 +1,6 @@
-import {data} from "../data";
+import data from "../data";
+
+
 
 const NewsList = {
     print() {
