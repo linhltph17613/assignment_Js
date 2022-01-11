@@ -1,7 +1,7 @@
 import { menuList } from "../data";
 
 const Header = {
-    print () {
+    render () {
         return /*html*/`
         <div class="bg-[#272f54]  py-4">
         <a href="#">
@@ -10,14 +10,12 @@ const Header = {
       </div>
       <div class="flex bg-[#c97900]">
         <div class="">
-          <ul class="menu flex">
-          ${menuList.map((post) => `
-         
-          <li class="menu_item"><a class="menu_item_link block py-3 px-6 hover:bg-indigo-600 hover:text-white hover:decoration-1" href="/${post.link}">${post.name}</a></li>
-
-           ` ).join("")}
-            
-          </ul>
+        <ul class="menu">
+        <li class="menu_item"><a class="menu_item_link" href="/">Home Page</a></li>
+        <li class="menu_item"><a class="menu_item_link" href="/about">About Page</a></li>
+        <li class="menu_item"><a class="menu_item_link" href="">Chương trình đào tạo</a></li>
+        <li class="menu_item"><a class="menu_item_link" href="">Góc sinh viên</a></li>
+      </ul>
         </div>
 
         <div>
