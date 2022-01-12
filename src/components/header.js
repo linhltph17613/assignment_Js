@@ -13,6 +13,8 @@ const Header = {
         <ul class="menu">
         <li class="menu_item"><a class="menu_item_link" href="/">Home Page</a></li>
         <li class="menu_item"><a class="menu_item_link" href="/about">About Page</a></li>
+        <li class="menu_item"><a class="menu_item_link" href="/news">News</a></li>
+
         <li class="menu_item"><a class="menu_item_link" href="">Chương trình đào tạo</a></li>
         <li class="menu_item"><a class="menu_item_link" href="">Góc sinh viên</a></li>
       </ul>

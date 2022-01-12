@@ -9,9 +9,10 @@ const NewsList = {
 
         ${data.map((news) => `
         <div class="new-item border p-4 hover:border-red-300;">
-        <img width="300px" src="${news.img}" alt="">
+        <a href="/news/${news.id}"><img width="300px" src="${news.img}" alt="">
         <p class="font-semibold my-3 text-[#c97900]">${news.title}</p>
         <p class="text-sm ">${news.desc}</p>
+        </a>
         </div>`
          ).join("")}
           

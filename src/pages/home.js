@@ -1,6 +1,4 @@
 import Banner from "../components/banner";
-import footer from "../components/footer";
-import Header from "../components/header";
 import NewsList from "../components/newList";
 
 const HomePage = {
@@ -18,9 +16,7 @@ const HomePage = {
             <div class="grid grid-cols-3 gap-8">
             ${NewsList.print()}
             </div>
-            <footer class="bg-[#272f54] mt-4">
-            ${footer.print()}
-            </footer>
+            
         `;
     },
 };
