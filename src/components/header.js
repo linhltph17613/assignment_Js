@@ -11,12 +11,16 @@ const Header = {
       <div class="flex bg-[#c97900]">
         <div class="">
         <ul class="menu">
-        <li class="menu_item"><a class="menu_item_link" href="/">Home Page</a></li>
+        <li class="menu_item"><a class="menu_item_link" href="/">Trang chủ</a></li>
         <li class="menu_item"><a class="menu_item_link" href="/about">About Page</a></li>
         <li class="menu_item"><a class="menu_item_link" href="/news">News</a></li>
 
-        <li class="menu_item"><a class="menu_item_link" href="">Chương trình đào tạo</a></li>
-        <li class="menu_item"><a class="menu_item_link" href="">Góc sinh viên</a></li>
+       
+        <li class="menu_item"><a class="menu_item_link" href="/admin/dashboard">Admin</a></li>
+
+        <li class="menu_item"><a class="menu_item_link" href="/signup">Sign Up</a></li>
+        <li class="menu_item"><a class="menu_item_link" href="/signin">Sign In</a></li>
+
       </ul>
         </div>
 

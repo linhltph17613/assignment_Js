@@ -5,7 +5,7 @@
     @apply flex;
 }
 .menu_item_link{
-    @apply block py-3 px-6 hover:bg-indigo-600 hover:text-white hover:decoration-1;
+    @apply block py-3 px-3 hover:bg-indigo-600 hover:text-white hover:decoration-1;
 }
 .new-item{
     @apply border p-4 hover:border-red-300;

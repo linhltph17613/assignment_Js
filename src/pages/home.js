@@ -1,10 +1,11 @@
 import Banner from "../components/banner";
 import NewsList from "../components/newList";
-
+import Header from "../components/header";
 const HomePage = {
     print() {
         return /* html */`
-            
+            ${Header.print()}
+           
             <div class="banner">
             ${Banner.print()}
             </div>

@@ -3,14 +3,18 @@ import Footer from './components/footer.js';
 import Header from './components/header.js';
 
 import AboutPage from './pages/about.js';
+import AddNewAdmin from './pages/addminNews.js';
+import Admin from './pages/admin.js';
 import detailNewPage from './pages/detailNews.js';
 import HomePage from './pages/home.js';
+import newAdmin from './pages/newAdmin.js';
 import NewPages from './pages/news.js';
+import SignIn from './pages/signIn.js';
+import SignUp from './pages/signup.js';
 
 const router = new Navigo("/", {linksSelector: "a"});
 const render =  (content) => {
    // console.log(content); //{print()}
-   document.getElementById("header").innerHTML = Header.print();
     document.getElementById("app").innerHTML = content;
     document.getElementById("footer").innerHTML = Footer.print();
 };
@@ -26,9 +30,34 @@ router.on({
     "/news": () => {
         render(NewPages.print());
     },
+
     "/news/:id": ({data}) => {
         const {id} = data;
         render(detailNewPage.print(id));
+    },
+
+    "/admin/dashboard": ()=> {
+        render(Admin.print());
+    },
+
+    "/admin/news":() => {
+        render(newAdmin.print())
+    },
+
+    "admin/news:id/edit" : ({data}) =>{
+        const {id} = data;
+        render(EditNewAdmin.print(id));
+    },
+
+    "/admin/add": () => {
+        render(AddNewAdmin.print())
+    },
+
+    "/signin": () => {
+        render(SignIn.print());
+    },
+    "/signup": () => {
+        render(SignUp.print())
     },
     
     
