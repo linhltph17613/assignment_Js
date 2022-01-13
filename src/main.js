@@ -35,7 +35,7 @@ router.on({
     "/signup": () => {
         render(Signup.print())
     },
-    "/signin": () => render(Signin.print()),
+    "/dangnhap": () => render(Signin.print()),
     "/news/:id": ({data}) => {
         const {id} = data;
         render(detailNewPage.print(id));
