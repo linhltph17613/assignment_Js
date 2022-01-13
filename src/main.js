@@ -36,6 +36,7 @@ router.on({
         render(SignUp.print())
     },
     "/signin": () => render(Signin.print()),
+    
     "/news/:id": ({data}) => {
         const {id} = data;
         render(detailNewPage.print(id));
