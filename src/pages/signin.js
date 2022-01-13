@@ -1,10 +1,7 @@
-import Header from "../components/header";
 
 const SignIn = {
   print() {
-    return /*html*/ `
-        ${Header.print()}
-`;
+    return /*html*/ `Signin`;
   }
 }
 export default SignIn;
