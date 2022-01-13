@@ -1,8 +1,11 @@
+import HeaderAdmin from "../components/headerAdmin";
+import { dataNew } from "../data";
 
 const EditNewAdmin = {
-    print () {
-
+    print (id) {
+        const result = dataNew.find((postNew) => postNew.id === id);
         return /*html*/ `
+        ${HeaderAdmin.print()}
         <h1 class="text-center text-2xl font-semibold my-4">Edit New</h1>
         <div class="mt-5 md:mt-0 md:col-span-2">
           <form action="#" method="POST">
@@ -20,8 +23,8 @@ const EditNewAdmin = {
                   </div>
     
                   <div class="col-span-6 sm:col-span-4">
-                    <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
-                    <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    <label for="email-address" class="block text-sm font-medium text-gray-700">Your Email</label>
+                    <input type="text" name="email-address" id="email-address" autocomplete="email" value="${result.email}" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
     
                   <div class="col-span-6 sm:col-span-3">
@@ -66,3 +69,4 @@ const EditNewAdmin = {
         `;
     }
 }
+export default EditNewAdmin;

@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
       id: "1",
       title: "Vinh danh 295 sinh viên FPT Polytechnic học kì Spring 2018",
@@ -19,6 +19,36 @@ const data = [
     },
  
 ];
-export default data;
+
+export const dataNew = [
+    {
+        id: "1",
+        name: "Jane Cooper",
+        title: "Regional Paradigm Technician",
+        img : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
+        email: "jane.cooper@example.com"
+    },
+    {
+        id: "2",
+        name: "Jane Cooper",
+        title: "Regional Paradigm Technician",
+        img : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
+        email: "jane.cooper@example.com"
+    },
+    {
+        id: "3",
+        name: "Jane Cooper",
+        title: "Regional Paradigm Technician",
+        img : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
+        email: "jane.cooper@example.com"
+    },
+    {
+        id: "4",
+        name: "Jane Cooper",
+        title: "Regional Paradigm Technician",
+        img : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
+        email: "jane.cooper@example.com"
+    }
+];
 
 

@@ -5,7 +5,9 @@ import Header from './components/header.js';
 import AboutPage from './pages/about.js';
 import AddNewAdmin from './pages/addminNews.js';
 import Admin from './pages/admin.js';
+import detailAdminNew from './pages/detailAdminNew.js';
 import detailNewPage from './pages/detailNews.js';
+import EditNewAdmin from './pages/editNews.js';
 import HomePage from './pages/home.js';
 import newAdmin from './pages/newAdmin.js';
 import NewPages from './pages/news.js';
@@ -44,7 +46,11 @@ router.on({
         render(newAdmin.print())
     },
 
-    "admin/news:id/edit" : ({data}) =>{
+    "/admin/detail/:id": ({data}) => {
+        const {id} = data;
+        render(detailAdminNew.print(id));
+    },
+    "/admin/news/:id/edit" : ({data}) =>{
         const {id} = data;
         render(EditNewAdmin.print(id));
     },
@@ -56,6 +62,7 @@ router.on({
     "/signin": () => {
         render(SignIn.print());
     },
+
     "/signup": () => {
         render(SignUp.print())
     },

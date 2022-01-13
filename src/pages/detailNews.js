@@ -1,4 +1,4 @@
-import data from "../data";
+import {data} from "../data";
 import Header from "../components/header";
 const detailNewPage = {
     print(id) {
