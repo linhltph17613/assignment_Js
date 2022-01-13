@@ -12,7 +12,7 @@ import HomePage from './pages/home.js';
 import newAdmin from './pages/newAdmin.js';
 import NewPages from './pages/news.js';
 import SignUp from './pages/signup.js';
-import Register from './pages/register.js';
+import Signin from './pages/register.js';
 
 const router = new Navigo("/", {linksSelector: "a"});
 const render =  (content) => {
@@ -35,7 +35,7 @@ router.on({
     "/signup": () => {
         render(Signup.print())
     },
-    "/signin": () => render(Register.print()),
+    "/signin": () => render(Signin.print()),
     "/news/:id": ({data}) => {
         const {id} = data;
         render(detailNewPage.print(id));

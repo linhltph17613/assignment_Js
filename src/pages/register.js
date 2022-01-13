@@ -1,7 +1,7 @@
 
-const Register = {
+const Signin = {
   print() {
     return /*html*/ `Signin`;
   }
 }
-export default Register;
+export default Signin;
