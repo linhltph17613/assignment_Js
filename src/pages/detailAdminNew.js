@@ -11,6 +11,7 @@ const detailAdminNew = {
         
         <div> <img class="rounded-full m-auto" src="${result.img}"> </div>
 
+    
         <div class="text-center"> ${result.name}</div>
         <div class="text-center"> ${result.email}</div>
         <div class="text-center"> ${result.title}</div>
