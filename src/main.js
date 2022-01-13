@@ -33,6 +33,13 @@ router.on({
         render(NewPages.print());
     },
 
+    "/signin": () => {
+        render(SignIn.print());
+    },
+
+    "/signup": () => {
+        render(SignUp.print())
+    },
     "/news/:id": ({data}) => {
         const {id} = data;
         render(detailNewPage.print(id));
@@ -57,14 +64,6 @@ router.on({
 
     "/admin/add": () => {
         render(AddNewAdmin.print())
-    },
-
-    "/signin": () => {
-        render(SignIn.print());
-    },
-
-    "/signup": () => {
-        render(SignUp.print())
     },
     
     
