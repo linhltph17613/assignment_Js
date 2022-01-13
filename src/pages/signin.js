@@ -1,8 +1,8 @@
 import Header from "../components/header";
 
 const SignIn = {
-    print() {
-        return /*html*/ `
+  print() {
+    return /*html*/ `
   ${Header.print()}
 <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
 <div class="max-w-md w-full space-y-8">
@@ -62,6 +62,6 @@ const SignIn = {
 </div>
 
         `;
-    }
+  }
 }
 export default SignIn;
