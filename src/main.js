@@ -11,7 +11,6 @@ import EditNewAdmin from './pages/editNews.js';
 import HomePage from './pages/home.js';
 import newAdmin from './pages/newAdmin.js';
 import NewPages from './pages/news.js';
-import SignIn from './pages/signIn.js';
 import SignUp from './pages/signup.js';
 
 const router = new Navigo("/", {linksSelector: "a"});
@@ -32,11 +31,6 @@ router.on({
     "/news": () => {
         render(NewPages.print());
     },
-
-    "/signin": () => {
-        render(SignIn.print());
-    },
-
     "/signup": () => {
         render(SignUp.print())
     },
