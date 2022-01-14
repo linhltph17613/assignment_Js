@@ -1,5 +1,5 @@
-import HeaderAdmin from "../components/headerAdmin";
-import { dataNew } from "../data";
+import HeaderAdmin from "../../../components/headerAdmin";
+import { dataNew } from "../../../data";
 
 const detailAdminNew = {
     print (id) {
