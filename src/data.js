@@ -31,23 +31,23 @@ export const dataNew = [
     {
         id: "2",
         name: "Angole",
-        title: "Regional Paradigm Technician",
+        title: "Với triết lí đào tạo Thực học-Thực nghiệp",
         img : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-        email: "jane.cooper@example.com"
+        email: "Angole@example.com"
     },
     {
         id: "3",
         name: "Rinmi",
-        title: "Regional Paradigm Technician",
+        title: "Với triết lí đào tạo Thực học-Thực nghiệp",
         img : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-        email: "jane.cooper@example.com"
+        email: "Rinmi@example.com"
     },
     {
         id: "4",
         name: "Lauria",
-        title: "Regional Paradigm Technician",
+        title: "Với triết lí đào tạo Thực học-Thực nghiệp",
         img : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-        email: "jane.cooper@example.com"
+        email: "lauria@example.com"
     }
 ];
 
