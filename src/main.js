@@ -22,23 +22,13 @@ const render =  (content) => {
 };
 
 router.on({
-    "/": () => {
-        render(HomePage.print());
-    },
-    "/about": () => {
-        render( AboutPage.print());
-
-    },
-    "/news": () => {
-        render(NewPages.print());
-    },
-
+    "/": () => render(HomePage.print()),
+    "/about": () =>  render( AboutPage.print()),
+    "/news": () => render(NewPages.print()),
     "/product": () => render(ProductPage.print()),
 
 
-    "/signup": () => {
-        render(SignUp.print())
-    },
+    "/signup": () => render(SignUp.print()),
     "/signin": () => render(Signin.print()),
     
     "/news/:id": ({data}) => {
@@ -63,14 +53,12 @@ router.on({
         render(EditNewAdmin.print(id));
     },
 
-    "/admin/add": () => {
-        render(AdminNewsAdd.print())
-    },
-    
     "/admin/dashboard": () => render(DashboardPage.print()),
     "/admin/products": () => render(ProductPage.print()),
     "/admin/news": () => render(AdminNews.print()),
     "/admin/news/add": () => render(AdminNewsAdd.print()),
+    "/admin/add": () => render(AdminNewsAdd.print()),
+
 });
 
 router.resolve();
