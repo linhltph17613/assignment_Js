@@ -13,13 +13,13 @@ const EditNewAdmin = {
               <div class="px-4 py-5 bg-white sm:p-6">
                 <div class="grid grid-cols-6 gap-6">
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    <label for="first-name" class="block text-sm font-medium text-gray-700">Your name</label>
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" value="${result.name}" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" >
                   </div>
     
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    <label for="last-name" class="block text-sm font-medium text-gray-700">Phone number</label>
+                    <input type="text" name="last-name" id="last-name" value="${result.phone}" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
     
                   <div class="col-span-6 sm:col-span-4">
@@ -28,11 +28,11 @@ const EditNewAdmin = {
                   </div>
     
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
-                    <select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                      <option>United States</option>
-                      <option>Canada</option>
-                      <option>Mexico</option>
+                    <label for="country" class="block text-sm font-medium text-gray-700">Age</label>
+                    <select id="country" name="country" autocomplete="country-name" value="${result.age} class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
                     </select>
                   </div>
     
